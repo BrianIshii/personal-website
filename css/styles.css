@@ -1,0 +1,26 @@
+body, button {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+
+h1 {
+  font-weight: 600;
+  margin: 0;
+}
+
+h2 {
+  color: #96979c;
+  font-weight: 500;
+  margin: 0 0 0.5em 0;
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.header-frame {
+  max-width: 350px;
+}
