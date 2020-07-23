@@ -1,7 +1,14 @@
+body {
+  background: linear-gradient(rgba(128,128,128,0.5) , rgba(128,128,128,0.5)), url('../img/half-dome.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
 body, button {
   font-family: "IBM Plex Mono", monospace;
 }
-
 
 h1 {
   font-weight: 600;
@@ -13,26 +20,16 @@ h2 {
   font-weight: 500;
   margin: 0 0 0.5em 0;
 }
-.outer {
-  display: table;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+
+a:link, a:visited {
+  color: black;
+  text-decoration: none;
 }
 
-.middle {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.inner {
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+.container {
+  margin: 50px auto;
+  padding: 5px;
+  max-width: 650px;
 }
 
 .header-section {
@@ -40,8 +37,54 @@ h2 {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .header-frame {
   max-width: 350px;
+}
+
+.links {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Icon Styling */
+.linkedin-icon .linkedin-icon-background {
+  color: transparent;
+}
+
+.linkedin-icon:hover .linkedin-icon-background {
+  color: white;
+}
+
+.linkedin-icon .linkedin-icon-foreground {
+  color: rgba(0, 0, 0, 0.644);
+  transition: all .2s ease-in-out;
+}
+
+.linkedin-icon:hover .linkedin-icon-foreground {
+  color: #0072b0;
+  transform: scale(1.2);
+}
+
+.github-icon .github-icon-background {
+  color: transparent;
+}
+
+.github-icon:hover .github-icon-background {
+  color: white;
+}
+
+.github-icon .github-icon-foreground {
+  color: rgba(0, 0, 0, 0.644);
+  transition: all .2s ease-in-out;
+}
+
+.github-icon:hover .github-icon-foreground {
+  color: black;
+  transform: scale(1.2);
 }
